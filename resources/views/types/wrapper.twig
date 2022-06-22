@@ -1,0 +1,13 @@
+<div id="structured_datum--{{ structured_datum.id }}" class="structured_datum structured_datum--{{ structured_datum.type.slug }}">
+
+    {% if structured_datum.title.value and not structured_datum.display_title.isFalse() %}
+        <h3 class="structured_datum__title">
+            {{ structured_datum.title }}
+        </h3>
+    {% endif %}
+
+    <div class="structured_datum__content">
+        {{ content|raw }}
+    </div>
+
+</div>

@@ -1,0 +1,69 @@
+.struct_data-field_type {
+  display: block !important;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item {
+  margin: 1rem 0;
+  background: rgba(200, 200, 200, 0.15);
+}
+.struct_data-field_type .structured_data-container .structured_datum-item.dragged {
+  opacity: 0.2;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item.collapsed .structured_datum-item-controls {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item.collapsed .structured_datum-body {
+  display: none;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-loading {
+  padding: 1rem;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-item-controls {
+  color: #ffffff;
+  background: #29363A;
+  padding: 0.5rem 1rem;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-item-controls a {
+  color: #ffffff;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-item-controls .subtitle {
+  opacity: 0.5;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-item-controls .dropdown-menu a {
+  color: #55595c;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-item-controls .fa.fa-arrows:before {
+  content: "\f338";
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-item-controls ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-item-controls .structured_datum-handle {
+  cursor: move;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-header {
+  padding: 1rem 1rem 0;
+  border-bottom: 1px solid rgba(50, 50, 50, 0.1);
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-body {
+  width: 100%;
+  padding: 1rem;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-body .card {
+  box-shadow: none;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-body .card .card-structured_datum .form-group:last-child {
+  margin-bottom: 0;
+}
+.struct_data-field_type .structured_data-container .structured_datum-item .structured_datum-body .card .form-group:not(.hidden) {
+  display: grid;
+  grid-template-columns: 200px auto;
+}
+
+/*# sourceMappingURL=structured_data.css.map */

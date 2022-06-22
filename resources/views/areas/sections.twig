@@ -1,0 +1,3 @@
+{% for structured_datum in area.structured_data %}
+    {{ structured_datum.render()|raw }}
+{% endfor %}

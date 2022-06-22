@@ -1,0 +1,77 @@
+{% block content %}
+    {% set instance = str_random() %}
+
+    {% for style in asset_styles("styles.css") %}
+        {{ style|raw }}
+    {% endfor %}
+
+    {% include "behavior_lab.field_type.struct_data::partials/controls" %}
+
+    <div class="clearfix"></div>
+
+    {% include "behavior_lab.field_type.struct_data::partials/fields" %}
+
+    <div class="structured_datum-body new" id="{{ instance }}">
+{#        {{ dd(content) }}#}
+        {{ content|raw }}
+{#        <div class="structured_datum-actions">#}
+{#            <button id="structured_datum_update_button_{{ instance }}"#}
+{#                    data-href="{{ url('admin/page_structured_data/save/' ~ form.getOptions().structured_datum_id) }}"#}
+{#                    data-instance="{{ instance }}" class="btn btn-success"#}
+{#                    style="display: none"#}
+{#            >#}
+{#                <i class="fa fa-save "></i>#}
+{#                {{ trans('behavior_lab.field_type.struct_data::button.save_structured_datum') }}#}
+{#            </button>#}
+{#        </div>#}
+{#        <script>#}
+{#        const structured_datum_{{ instance }} = document.getElementById('{{ instance }}');#}
+{#        const structured_datum_update_button_{{ instance }} = document.getElementById('structured_datum_update_button_{{ instance }}');#}
+{#        let structured_datum_updated_{{ instance }} = false;#}
+{#        let structured_datum_fields_{{ instance }} = [];#}
+{#        structured_datum_fields_{{ instance }}.push(structured_datum_{{ instance }}.getElementsByTagName('input'));#}
+{#        structured_datum_fields_{{ instance }}.push(structured_datum_{{ instance }}.getElementsByTagName('textarea'));#}
+{#        structured_datum_fields_{{ instance }}.push(structured_datum_{{ instance }}.getElementsByTagName('select'));#}
+{#        let structured_datum_values_{{ instance }} = {#}
+{#          _prefix: '{{ form.getOptions().prefix }}',#}
+{#          _token: '{{ csrf_token() }}'#}
+{#        };#}
+{#        for (let i = 0; i < structured_datum_fields_{{ instance }}.length; i++) {#}
+{#          for (let j = 0; j < structured_datum_fields_{{ instance }}[i].length; j++) {#}
+{#            structured_datum_fields_{{ instance }}[i][j].addEventListener('change', (event) => {#}
+{#              structured_datum_values_{{ instance }}[event.currentTarget.name] = event.currentTarget.value;#}
+{#              structured_datum_updated_{{ instance }} = true;#}
+{#              console.log(structured_datum_values_{{ instance }});#}
+{#              structured_datum_update_button_{{ instance }}.style.display = 'block';#}
+{#            });#}
+{#          }#}
+{#        }#}
+{#        structured_datum_update_button_{{ instance }}.addEventListener("click", (event) => {#}
+{#          event.preventDefault();#}
+{#          console.log(event);#}
+{#          console.log(event.target.dataset.href);#}
+
+{#          const form = document.createElement('form');#}
+{#          form.method = 'post';#}
+{#          form.action = event.target.dataset.href;#}
+
+{#          let hiddenField;#}
+{#          for (const [key, value] of Object.entries(structured_datum_values_{{ instance }})) {#}
+{#            hiddenField = document.createElement('input');#}
+{#            hiddenField.type = 'hidden';#}
+{#            hiddenField.name = key;#}
+{#            hiddenField.value = value;#}
+{#            form.appendChild(hiddenField);#}
+{#          }#}
+
+{#          document.body.appendChild(form);#}
+{#          form.submit();#}
+{#        })#}
+{#        </script>#}
+    </div>
+
+    {% for script in asset_scripts("scripts.js") %}
+        {{ script|raw }}
+    {% endfor %}
+
+{% endblock %}
