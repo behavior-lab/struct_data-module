@@ -35,7 +35,7 @@ class BehaviorLabModuleStructDataCreateExtensionsStream extends Migration
      * @var array
      */
     protected $stream = [
-        'slug' => 'structured_data',
+        'slug' => 'extensions',
     ];
 
     /**
