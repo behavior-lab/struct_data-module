@@ -6,44 +6,25 @@ class BehaviorLabModuleStructDataCreateExtensionsStream extends Migration
 {
 
     /**
-     * Don't delete the stream here
-     * it's only for reference use.
-     *
-     * @var bool
-     */
-    protected $delete = false;
-
-    /**
-     * The addon fields.
-     *
-     * @var array
-     */
-    protected $fields = [
-        'type' => [
-            'type'   => 'anomaly.field_type.relationship',
-            'config' => [
-                'related' => \BehaviorLab\StructDataModule\Type\TypeModel::class,
-            ],
-        ],
-    ];
-
-    /**
-     * The addon stream.
-     * This is only for
-     * reference for below.
+     * The stream definition.
      *
      * @var array
      */
     protected $stream = [
-        'slug' => 'extensions',
+        'slug'         => 'extensions',
+        'title_column' => 'provider',
+        'translatable' => false,
+        'trashable'    => false,
+        'searchable'   => false,
+        'sortable'     => false,
     ];
 
     /**
-     * The addon assignments.
+     * The stream assignments.
      *
      * @var array
      */
     protected $assignments = [
-        'type',
+        'provider',
     ];
 }

@@ -28,7 +28,7 @@ class StructDataModule extends Module
      *
      * @var string
      */
-    protected $icon = 'magic';
+    protected $icon = 'fas fa-digital-tachograph';
 
     /**
      * The navigation flag.

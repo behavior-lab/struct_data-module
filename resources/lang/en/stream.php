@@ -10,7 +10,4 @@ return [
     'extensions' => [
         'name' => 'Extensions',
     ],
-    'extensions' => [
-        'name' => 'Extensions',
-    ],
 ];
