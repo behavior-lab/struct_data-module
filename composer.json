@@ -9,7 +9,7 @@
     "homepage": "https://behaviorlab.site/addons/struct_data-module",
     "license": "MIT",
     "assets": {
-        "icon": "",
+        "icon": "marketplace/icon.png",
         "screenshots": []
     },
     "authors": [
