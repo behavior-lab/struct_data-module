@@ -1,12 +1,12 @@
-<?php namespace BehaviorLab\StructDataModule\Area\Contract;
+<?php namespace ConductLab\StructDataModule\Area\Contract;
 
 use Anomaly\Streams\Platform\Entry\Contract\EntryRepositoryInterface;
 
 /**
  * Interface AreaRepositoryInterface
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

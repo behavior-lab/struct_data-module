@@ -5,8 +5,8 @@ use Anomaly\Streams\Platform\Database\Migration\Migration;
 /**
  * Class BehaviorLabModuleStructDataCreateAreasStream
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

@@ -1,10 +1,10 @@
-<?php namespace BehaviorLab\StructDataModule\Http\Controller\Admin;
+<?php namespace ConductLab\StructDataModule\Http\Controller\Admin;
 
 /**
  * Class FieldsController
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

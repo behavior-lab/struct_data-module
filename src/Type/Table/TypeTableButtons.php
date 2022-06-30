@@ -1,12 +1,12 @@
-<?php namespace BehaviorLab\StructDataModule\Type\Table;
+<?php namespace ConductLab\StructDataModule\Type\Table;
 
-use BehaviorLab\StructDataModule\Type\Contract\TypeInterface;
+use ConductLab\StructDataModule\Type\Contract\TypeInterface;
 
 /**
  * Class TypeTableButtons
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

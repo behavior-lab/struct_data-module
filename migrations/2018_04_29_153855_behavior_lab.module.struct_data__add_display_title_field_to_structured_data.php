@@ -5,8 +5,8 @@ use Anomaly\Streams\Platform\Database\Migration\Migration;
 /**
  * Class BehaviorLabModuleStructDataAddDisplayTitleFieldToStructuredData
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -32,7 +32,7 @@ class BehaviorLabModuleStructDataAddDisplayTitleFieldToStructuredData extends Mi
             'config' => [
                 'default_value' => true,
                 'mode'          => 'checkbox',
-                'label'         => 'behavior_lab.module.structured_data::field.display_title.label',
+                'label'         => 'conduct_lab.module.structured_data::field.display_title.label',
             ],
         ],
     ];

@@ -1,9 +1,9 @@
-<?php namespace BehaviorLab\StructDataModule\Type\Command;
+<?php namespace ConductLab\StructDataModule\Type\Command;
 
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
-use BehaviorLab\StructDataModule\StructuredDatum\Form\StructuredDatumFormBuilder;
-use BehaviorLab\StructDataModule\Type\Contract\TypeInterface;
-use BehaviorLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
+use ConductLab\StructDataModule\StructuredDatum\Form\StructuredDatumFormBuilder;
+use ConductLab\StructDataModule\Type\Contract\TypeInterface;
+use ConductLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
 use Anomaly\Streams\Platform\Addon\AddonCollection;
 use Anomaly\Streams\Platform\Addon\Extension\ExtensionCollection;
 use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
@@ -12,8 +12,8 @@ use Anomaly\Streams\Platform\Ui\Form\Multiple\MultipleFormBuilder;
 /**
  * Class RegisterStructuredData
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -56,7 +56,7 @@ class RegisterStructuredData
                 ->setDescription($type->getDescription())
                 ->setWrapper($type->getWrapperLayoutView())
                 ->setPath(realpath(__DIR__ . '/../../../'))
-                ->setProvides('behavior_lab.module.struct_data::structured_datum.' . $type->getSlug());
+                ->setProvides('conduct_lab.module.struct_data::structured_datum.' . $type->getSlug());
 
             $extension->on(
                 'extending',

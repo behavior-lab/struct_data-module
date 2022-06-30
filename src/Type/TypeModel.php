@@ -1,8 +1,8 @@
-<?php namespace BehaviorLab\StructDataModule\Type;
+<?php namespace ConductLab\StructDataModule\Type;
 
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumCollection;
-use BehaviorLab\StructDataModule\Type\Command\GetStream;
-use BehaviorLab\StructDataModule\Type\Contract\TypeInterface;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumCollection;
+use ConductLab\StructDataModule\Type\Command\GetStream;
+use ConductLab\StructDataModule\Type\Contract\TypeInterface;
 use Anomaly\EditorFieldType\EditorFieldType;
 use Anomaly\Streams\Platform\Entry\EntryModel;
 use Anomaly\Streams\Platform\Model\StructData\StructDataTypesEntryModel;
@@ -11,8 +11,8 @@ use Anomaly\Streams\Platform\Stream\Contract\StreamInterface;
 /**
  * Class TypeModel
  *
- * @link          https://behaviorlab.site/
- * @author        Behavior CPH, ApS <support@behaviorlab.site>
+ * @link          https://ConductLab.site/
+ * @author        Behavior CPH, ApS <support@ConductLab.site>
  * @author        Ryan Thompson <ryan@pyrocms.com>
  */
 class TypeModel extends StructDataTypesEntryModel implements TypeInterface
@@ -169,6 +169,6 @@ class TypeModel extends StructDataTypesEntryModel implements TypeInterface
      */
     public function structured_data()
     {
-        return $this->hasMany('BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumModel', 'type_id');
+        return $this->hasMany('ConductLab\StructDataModule\StructuredDatum\StructuredDatumModel', 'type_id');
     }
 }

@@ -1,7 +1,7 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum;
+<?php namespace ConductLab\StructDataModule\StructuredDatum;
 
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumRepositoryInterface;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumRepositoryInterface;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Entry\EntryRepository;
 use Anomaly\Streams\Platform\Field\Contract\FieldInterface;
@@ -12,7 +12,7 @@ use Anomaly\Streams\Platform\Field\Contract\FieldInterface;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       BehaviorLab\StructDataModule\StructuredDatum
+ * @package       ConductLab\StructDataModule\StructuredDatum
  */
 class StructuredDatumRepository extends EntryRepository implements StructuredDatumRepositoryInterface
 {

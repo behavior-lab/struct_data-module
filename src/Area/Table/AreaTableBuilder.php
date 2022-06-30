@@ -1,12 +1,12 @@
-<?php namespace BehaviorLab\StructDataModule\Area\Table;
+<?php namespace ConductLab\StructDataModule\Area\Table;
 
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
 
 /**
  * Class AreaTableBuilder
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

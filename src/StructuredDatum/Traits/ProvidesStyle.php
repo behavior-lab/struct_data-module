@@ -1,10 +1,10 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Traits;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Traits;
 
 /**
  * Class ProvidesStyle
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -14,8 +14,8 @@ use Anomaly\Streams\Platform\Addon\FieldType\FieldTypePresenter;
 /**
  * Class ProvidesStyle
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

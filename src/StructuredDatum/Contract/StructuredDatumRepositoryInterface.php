@@ -1,4 +1,4 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Contract;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Contract;
 
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Entry\Contract\EntryRepositoryInterface;
@@ -10,7 +10,7 @@ use Anomaly\Streams\Platform\Field\Contract\FieldInterface;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       BehaviorLab\StructDataModule\StructuredDatum\Contract
+ * @package       ConductLab\StructDataModule\StructuredDatum\Contract
  */
 interface StructuredDatumRepositoryInterface extends EntryRepositoryInterface
 {

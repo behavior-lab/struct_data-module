@@ -1,13 +1,13 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Support\SelectFieldType;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Support\SelectFieldType;
 
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumCategories;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumCategories;
 use Anomaly\SelectFieldType\SelectFieldType;
 
 /**
  * Class CategoryOptions
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

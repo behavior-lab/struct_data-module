@@ -1,7 +1,7 @@
-<?php namespace BehaviorLab\StructDataModule\Area\Command;
+<?php namespace ConductLab\StructDataModule\Area\Command;
 
-use BehaviorLab\StructDataModule\Area\Contract\AreaInterface;
-use BehaviorLab\StructDataModule\Area\Contract\AreaRepositoryInterface;
+use ConductLab\StructDataModule\Area\Contract\AreaInterface;
+use ConductLab\StructDataModule\Area\Contract\AreaRepositoryInterface;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Entry\EntryPresenter;
 use Anomaly\Streams\Platform\Model\EloquentModel;
@@ -9,8 +9,8 @@ use Anomaly\Streams\Platform\Model\EloquentModel;
 /**
  * Class GetArea
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

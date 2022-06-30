@@ -1,13 +1,13 @@
 <?php
 
-use BehaviorLab\StructDataModule\StructuredDatum\Support\SelectFieldType\CategoryOptions;
+use ConductLab\StructDataModule\StructuredDatum\Support\SelectFieldType\CategoryOptions;
 use Anomaly\Streams\Platform\Database\Migration\Migration;
 
 /**
  * Class BehaviorLabModuleStructDataCreateTypesFields
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -37,7 +37,7 @@ class BehaviorLabModuleStructDataCreateTypesFields extends Migration
             'type'   => 'anomaly.field_type.editor',
             'config' => [
                 'mode'          => 'twig',
-                'default_value' => '{% extends "behavior_lab.module.structured_data::types.wrapper" %}',
+                'default_value' => '{% extends "conduct_lab.module.structured_data::types.wrapper" %}',
             ],
         ],
     ];

@@ -1,14 +1,14 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Contract;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Contract;
 
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
 use Anomaly\Streams\Platform\Addon\FieldType\FieldTypePresenter;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 
 /**
  * Interface StructuredDatumInterface
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

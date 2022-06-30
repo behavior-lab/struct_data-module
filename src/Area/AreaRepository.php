@@ -1,7 +1,7 @@
-<?php namespace BehaviorLab\StructDataModule\Area;
+<?php namespace ConductLab\StructDataModule\Area;
 
-use BehaviorLab\StructDataModule\Area\Contract\AreaInterface;
-use BehaviorLab\StructDataModule\Area\Contract\AreaRepositoryInterface;
+use ConductLab\StructDataModule\Area\Contract\AreaInterface;
+use ConductLab\StructDataModule\Area\Contract\AreaRepositoryInterface;
 use Anomaly\Streams\Platform\Entry\EntryRepository;
 
 class AreaRepository extends EntryRepository implements AreaRepositoryInterface

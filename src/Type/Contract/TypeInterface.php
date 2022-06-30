@@ -1,7 +1,7 @@
-<?php namespace BehaviorLab\StructDataModule\Type\Contract;
+<?php namespace ConductLab\StructDataModule\Type\Contract;
 
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumCollection;
-use BehaviorLab\StructDataModule\StructuredDatum\Handler\Contract\StructuredDatumHandlerInterface;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumCollection;
+use ConductLab\StructDataModule\StructuredDatum\Handler\Contract\StructuredDatumHandlerInterface;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Entry\EntryModel;
 use Anomaly\Streams\Platform\Stream\Contract\StreamInterface;
@@ -9,8 +9,8 @@ use Anomaly\Streams\Platform\Stream\Contract\StreamInterface;
 /**
  * Interface TypeInterface
  *
- * @link          https://behaviorlab.site/
- * @author        Behavior CPH, ApS <support@behaviorlab.site>
+ * @link          https://ConductLab.site/
+ * @author        Behavior CPH, ApS <support@ConductLab.site>
  * @author        Ryan Thompson <ryan@pyrocms.com>
  */
 interface TypeInterface extends EntryInterface

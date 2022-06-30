@@ -1,4 +1,4 @@
-<?php namespace BehaviorLab\StructDataModule\Extension\Contract;
+<?php namespace ConductLab\StructDataModule\Extension\Contract;
 
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 

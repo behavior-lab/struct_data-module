@@ -1,10 +1,10 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum;
+<?php namespace ConductLab\StructDataModule\StructuredDatum;
 
 /**
  * Class StructuredDatumCategories
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -18,40 +18,40 @@ class StructuredDatumCategories
      */
     protected $categories = [
         'all'         => [
-            'name'        => 'behavior_lab.module.struct_data::category.all.name',
-            'description' => 'behavior_lab.module.struct_data::category.all.description',
+            'name'        => 'conduct_lab.module.struct_data::category.all.name',
+            'description' => 'conduct_lab.module.struct_data::category.all.description',
         ],
         'content'     => [
-            'name'        => 'behavior_lab.module.struct_data::category.content.name',
-            'description' => 'behavior_lab.module.struct_data::category.content.description',
+            'name'        => 'conduct_lab.module.struct_data::category.content.name',
+            'description' => 'conduct_lab.module.struct_data::category.content.description',
         ],
         'information' => [
-            'name'        => 'behavior_lab.module.struct_data::category.information.name',
-            'description' => 'behavior_lab.module.struct_data::category.information.description',
+            'name'        => 'conduct_lab.module.struct_data::category.information.name',
+            'description' => 'conduct_lab.module.struct_data::category.information.description',
         ],
         'component'   => [
-            'name'        => 'behavior_lab.module.struct_data::category.component.name',
-            'description' => 'behavior_lab.module.struct_data::category.component.description',
+            'name'        => 'conduct_lab.module.struct_data::category.component.name',
+            'description' => 'conduct_lab.module.struct_data::category.component.description',
         ],
         'media'       => [
-            'name'        => 'behavior_lab.module.struct_data::category.media.name',
-            'description' => 'behavior_lab.module.struct_data::category.media.description',
+            'name'        => 'conduct_lab.module.struct_data::category.media.name',
+            'description' => 'conduct_lab.module.struct_data::category.media.description',
         ],
         'addon'       => [
-            'name'        => 'behavior_lab.module.struct_data::category.addon.name',
-            'description' => 'behavior_lab.module.struct_data::category.addon.description',
+            'name'        => 'conduct_lab.module.struct_data::category.addon.name',
+            'description' => 'conduct_lab.module.struct_data::category.addon.description',
         ],
         'social'      => [
-            'name'        => 'behavior_lab.module.struct_data::category.social.name',
-            'description' => 'behavior_lab.module.struct_data::category.social.description',
+            'name'        => 'conduct_lab.module.struct_data::category.social.name',
+            'description' => 'conduct_lab.module.struct_data::category.social.description',
         ],
         'layout'      => [
-            'name'        => 'behavior_lab.module.structured_data::category.layout.name',
-            'description' => 'behavior_lab.module.structured_data::category.layout.description',
+            'name'        => 'conduct_lab.module.structured_data::category.layout.name',
+            'description' => 'conduct_lab.module.structured_data::category.layout.description',
         ],
         'other'       => [
-            'name'        => 'behavior_lab.module.structured_data::category.other.name',
-            'description' => 'behavior_lab.module.structured_data::category.other.description',
+            'name'        => 'conduct_lab.module.structured_data::category.other.name',
+            'description' => 'conduct_lab.module.structured_data::category.other.description',
         ],
     ];
 

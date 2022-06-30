@@ -37,12 +37,12 @@ class BehaviorLabModuleStructDataCreateStructDataFields extends Migration
         ],
         'area'        => 'anomaly.field_type.polymorphic',
         'entry'       => 'anomaly.field_type.polymorphic',
-        'structured_data'      => 'behavior_lab.field_type.struct_data',
+        'structured_data'      => 'conduct_lab.field_type.struct_data',
         'extension'   => [
             'type'   => 'anomaly.field_type.addon',
             'config' => [
                 'type'   => 'extensions',
-                'search' => 'behavior_lab.module.struct_data::type.*',
+                'search' => 'conduct_lab.module.struct_data::type.*',
             ],
         ],
         'provider'        => 'anomaly.field_type.text',

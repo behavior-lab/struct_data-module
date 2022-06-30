@@ -1,10 +1,10 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum;
+<?php namespace ConductLab\StructDataModule\StructuredDatum;
 
-use BehaviorLab\StructDataModule\StructuredDatum\Command\AddConfigurationForm;
-use BehaviorLab\StructDataModule\StructuredDatum\Command\AddStreamForm;
-use BehaviorLab\StructDataModule\StructuredDatum\Command\ExtendFormStructuredData;
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\Form\StructuredDatumInstanceFormBuilder;
+use ConductLab\StructDataModule\StructuredDatum\Command\AddConfigurationForm;
+use ConductLab\StructDataModule\StructuredDatum\Command\AddStreamForm;
+use ConductLab\StructDataModule\StructuredDatum\Command\ExtendFormStructuredData;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
+use ConductLab\StructDataModule\StructuredDatum\Form\StructuredDatumInstanceFormBuilder;
 use Anomaly\Streams\Platform\Addon\Extension\Extension;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Stream\Contract\StreamInterface;
@@ -13,8 +13,8 @@ use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
 /**
  * Class StructuredDatumExtension
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -61,14 +61,14 @@ class StructuredDatumExtension extends Extension
      *
      * @var null|string
      */
-    protected $view = 'behavior_lab.module.struct_data::structured_data/content';
+    protected $view = 'conduct_lab.module.struct_data::structured_data/content';
 
     /**
      * The structured_datum wrapper.
      *
      * @var null|string
      */
-    protected $wrapper = 'behavior_lab.module.struct_data::structured_data/wrapper';
+    protected $wrapper = 'conduct_lab.module.struct_data::structured_data/wrapper';
 
     /**
      * The text elements that the structured_datum uses.

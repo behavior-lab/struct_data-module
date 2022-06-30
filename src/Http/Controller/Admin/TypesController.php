@@ -1,14 +1,14 @@
-<?php namespace BehaviorLab\StructDataModule\Http\Controller\Admin;
+<?php namespace ConductLab\StructDataModule\Http\Controller\Admin;
 
-use BehaviorLab\StructDataModule\Type\Form\TypeFormBuilder;
-use BehaviorLab\StructDataModule\Type\Table\TypeTableBuilder;
+use ConductLab\StructDataModule\Type\Form\TypeFormBuilder;
+use ConductLab\StructDataModule\Type\Table\TypeTableBuilder;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
 
 /**
  * Class TypesController
  *
- * @link          https://behaviorlab.site/
- * @author        Behavior CPH, ApS <support@behaviorlab.site>
+ * @link          https://ConductLab.site/
+ * @author        Behavior CPH, ApS <support@ConductLab.site>
  * @author        Ryan Thompson <ryan@pyrocms.com>
  */
 class TypesController extends AdminController

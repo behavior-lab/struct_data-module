@@ -1,6 +1,6 @@
-<?php namespace BehaviorLab\StructDataModule;
+<?php namespace ConductLab\StructDataModule;
 
-use BehaviorLab\StructDataFieldType\StructDataFieldType;
+use ConductLab\StructDataFieldType\StructDataFieldType;
 use Anomaly\Streams\Platform\Addon\Module\Module;
 
 /**
@@ -9,7 +9,7 @@ use Anomaly\Streams\Platform\Addon\Module\Module;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       BehaviorLab\StructDataModule
+ * @package       ConductLab\StructDataModule
  */
 class StructDataModule extends Module
 {

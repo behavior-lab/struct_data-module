@@ -1,24 +1,24 @@
-<?php namespace BehaviorLab\StructDataModule;
+<?php namespace ConductLab\StructDataModule;
 
 use Anomaly\Streams\Platform\Addon\Extension\ExtensionCollection;
-use BehaviorLab\StructDataModule\Extension\Contract\ExtensionRepositoryInterface;
-use BehaviorLab\StructDataModule\Extension\ExtensionRepository;
+use ConductLab\StructDataModule\Extension\Contract\ExtensionRepositoryInterface;
+use ConductLab\StructDataModule\Extension\ExtensionRepository;
 use Anomaly\Streams\Platform\Model\StructData\StructDataExtensionsEntryModel;
-use BehaviorLab\StructDataModule\Extension\ExtensionModel;
-use BehaviorLab\StructDataModule\Area\AreaModel;
-use BehaviorLab\StructDataModule\Area\AreaRepository;
-use BehaviorLab\StructDataModule\Area\Contract\AreaRepositoryInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumCategories;
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumModel;
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumRepository;
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumRepositoryInterface;
-use BehaviorLab\StructDataModule\Http\Controller\Admin\AssignmentsController;
-use BehaviorLab\StructDataModule\Http\Controller\Admin\FieldsController;
-use BehaviorLab\StructDataModule\Type\Command\RegisterStructuredData;
-use BehaviorLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
-use BehaviorLab\StructDataModule\Type\TypeModel;
-use BehaviorLab\StructDataModule\Type\TypeRepository;
+use ConductLab\StructDataModule\Extension\ExtensionModel;
+use ConductLab\StructDataModule\Area\AreaModel;
+use ConductLab\StructDataModule\Area\AreaRepository;
+use ConductLab\StructDataModule\Area\Contract\AreaRepositoryInterface;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumCategories;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumModel;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumRepository;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumRepositoryInterface;
+use ConductLab\StructDataModule\Http\Controller\Admin\AssignmentsController;
+use ConductLab\StructDataModule\Http\Controller\Admin\FieldsController;
+use ConductLab\StructDataModule\Type\Command\RegisterStructuredData;
+use ConductLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
+use ConductLab\StructDataModule\Type\TypeModel;
+use ConductLab\StructDataModule\Type\TypeRepository;
 use Anomaly\Streams\Platform\Addon\AddonServiceProvider;
 use Anomaly\Streams\Platform\Assignment\AssignmentRouter;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
@@ -31,8 +31,8 @@ use Illuminate\Routing\Router;
 /**
  * Class StructDataModuleServiceProvider
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -54,27 +54,27 @@ class StructDataModuleServiceProvider extends AddonServiceProvider
      * @var array
      */
     protected $routes = [
-        'admin/struct_data/extensions'           => 'BehaviorLab\StructDataModule\Http\Controller\Admin\ExtensionsController@index',
-        'admin/struct_data/extensions/create'    => 'BehaviorLab\StructDataModule\Http\Controller\Admin\ExtensionsController@create',
-        'admin/struct_data/extensions/edit/{id}' => 'BehaviorLab\StructDataModule\Http\Controller\Admin\ExtensionsController@edit',
-//        'admin/struct_data'                        => 'BehaviorLab\StructDataModule\Http\Controller\Admin\AreasController@index',
-//        'admin/struct_data/create'                 => 'BehaviorLab\StructDataModule\Http\Controller\Admin\AreasController@create',
-//        'admin/struct_data/choose'                 => 'BehaviorLab\StructDataModule\Http\Controller\Admin\AreasController@choose',
-//        'admin/struct_data/edit/{id}'              => 'BehaviorLab\StructDataModule\Http\Controller\Admin\AreasController@edit',
-//        'admin/struct_data/types'                  => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@index',
-//        'admin/struct_data/types/create'           => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@create',
-//        'admin/struct_data/types/edit/{id}'        => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@edit',
-        'admin/struct_data'                        => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@index',
-        'admin/struct_data/create'                 => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@create',
-        'admin/struct_data/edit/{id}'              => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@edit',
-        'admin/struct_data/types'                  => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@index',
-        'admin/struct_data/types/create'           => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@create',
-        'admin/struct_data/types/edit/{id}'        => 'BehaviorLab\StructDataModule\Http\Controller\Admin\TypesController@edit',
-        'admin/struct_data/areas/{area}'           => 'BehaviorLab\StructDataModule\Http\Controller\Admin\StructuredDataController@index',
-        'admin/struct_data/areas/{area}/create'    => 'BehaviorLab\StructDataModule\Http\Controller\Admin\StructuredDataController@create',
-        'admin/struct_data/areas/{area}/choose'    => 'BehaviorLab\StructDataModule\Http\Controller\Admin\StructuredDataController@choose',
-        'admin/struct_data/areas/{area}/edit/{id}' => 'BehaviorLab\StructDataModule\Http\Controller\Admin\StructuredDataController@edit',
-        'admin/struct_data/save/{structured_datum_id}'      => 'BehaviorLab\StructDataModule\Http\Controller\Admin\StructuredDataController@save',
+        'admin/struct_data/extensions'           => 'ConductLab\StructDataModule\Http\Controller\Admin\ExtensionsController@index',
+        'admin/struct_data/extensions/create'    => 'ConductLab\StructDataModule\Http\Controller\Admin\ExtensionsController@create',
+        'admin/struct_data/extensions/edit/{id}' => 'ConductLab\StructDataModule\Http\Controller\Admin\ExtensionsController@edit',
+//        'admin/struct_data'                        => 'ConductLab\StructDataModule\Http\Controller\Admin\AreasController@index',
+//        'admin/struct_data/create'                 => 'ConductLab\StructDataModule\Http\Controller\Admin\AreasController@create',
+//        'admin/struct_data/choose'                 => 'ConductLab\StructDataModule\Http\Controller\Admin\AreasController@choose',
+//        'admin/struct_data/edit/{id}'              => 'ConductLab\StructDataModule\Http\Controller\Admin\AreasController@edit',
+//        'admin/struct_data/types'                  => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@index',
+//        'admin/struct_data/types/create'           => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@create',
+//        'admin/struct_data/types/edit/{id}'        => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@edit',
+        'admin/struct_data'                        => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@index',
+        'admin/struct_data/create'                 => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@create',
+        'admin/struct_data/edit/{id}'              => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@edit',
+        'admin/struct_data/types'                  => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@index',
+        'admin/struct_data/types/create'           => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@create',
+        'admin/struct_data/types/edit/{id}'        => 'ConductLab\StructDataModule\Http\Controller\Admin\TypesController@edit',
+        'admin/struct_data/areas/{area}'           => 'ConductLab\StructDataModule\Http\Controller\Admin\StructuredDataController@index',
+        'admin/struct_data/areas/{area}/create'    => 'ConductLab\StructDataModule\Http\Controller\Admin\StructuredDataController@create',
+        'admin/struct_data/areas/{area}/choose'    => 'ConductLab\StructDataModule\Http\Controller\Admin\StructuredDataController@choose',
+        'admin/struct_data/areas/{area}/edit/{id}' => 'ConductLab\StructDataModule\Http\Controller\Admin\StructuredDataController@edit',
+        'admin/struct_data/save/{structured_datum_id}'      => 'ConductLab\StructDataModule\Http\Controller\Admin\StructuredDataController@save',
     ];
 
     /**

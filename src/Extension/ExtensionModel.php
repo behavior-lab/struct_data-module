@@ -1,7 +1,7 @@
-<?php namespace BehaviorLab\StructDataModule\Extension;
+<?php namespace ConductLab\StructDataModule\Extension;
 
 use Anomaly\Streams\Platform\Addon\Extension\ExtensionCollection;
-use BehaviorLab\StructDataModule\Extension\Contract\ExtensionInterface;
+use ConductLab\StructDataModule\Extension\Contract\ExtensionInterface;
 use Anomaly\Streams\Platform\Model\StructData\StructDataExtensionsEntryModel;
 
 class ExtensionModel extends StructDataExtensionsEntryModel implements ExtensionInterface

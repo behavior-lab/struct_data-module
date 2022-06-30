@@ -1,10 +1,10 @@
-<?php namespace BehaviorLab\StructDataModule\Type;
+<?php namespace ConductLab\StructDataModule\Type;
 
-use BehaviorLab\StructDataModule\Type\Command\CreateStream;
-use BehaviorLab\StructDataModule\Type\Command\DeleteStream;
-use BehaviorLab\StructDataModule\Type\Command\UpdateStructuredData;
-use BehaviorLab\StructDataModule\Type\Command\UpdateStream;
-use BehaviorLab\StructDataModule\Type\Contract\TypeInterface;
+use ConductLab\StructDataModule\Type\Command\CreateStream;
+use ConductLab\StructDataModule\Type\Command\DeleteStream;
+use ConductLab\StructDataModule\Type\Command\UpdateStructuredData;
+use ConductLab\StructDataModule\Type\Command\UpdateStream;
+use ConductLab\StructDataModule\Type\Contract\TypeInterface;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Entry\EntryObserver;
 use Anomaly\Streams\Platform\Http\Command\ClearHttpCache;
@@ -12,8 +12,8 @@ use Anomaly\Streams\Platform\Http\Command\ClearHttpCache;
 /**
  * Class TypeObserver
  *
- * @link          https://behaviorlab.site/
- * @author        Behavior CPH, ApS <support@behaviorlab.site>
+ * @link          https://ConductLab.site/
+ * @author        Behavior CPH, ApS <support@ConductLab.site>
  * @author        Ryan Thompson <ryan@pyrocms.com>
  */
 class TypeObserver extends EntryObserver

@@ -1,16 +1,16 @@
-<?php namespace BehaviorLab\StructDataModule\Area;
+<?php namespace ConductLab\StructDataModule\Area;
 
-use BehaviorLab\StructDataModule\Area\Contract\AreaInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumCollection;
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumModel;
+use ConductLab\StructDataModule\Area\Contract\AreaInterface;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumCollection;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumModel;
 use Anomaly\Streams\Platform\Model\StructData\StructDataAreasEntryModel;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * Class AreaModel
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

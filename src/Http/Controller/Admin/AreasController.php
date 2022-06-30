@@ -1,15 +1,15 @@
-<?php namespace BehaviorLab\StructDataModule\Http\Controller\Admin;
+<?php namespace ConductLab\StructDataModule\Http\Controller\Admin;
 
-use BehaviorLab\StructDataModule\Area\Contract\AreaRepositoryInterface;
-use BehaviorLab\StructDataModule\Area\Form\AreaFormBuilder;
-use BehaviorLab\StructDataModule\Area\Table\AreaTableBuilder;
+use ConductLab\StructDataModule\Area\Contract\AreaRepositoryInterface;
+use ConductLab\StructDataModule\Area\Form\AreaFormBuilder;
+use ConductLab\StructDataModule\Area\Table\AreaTableBuilder;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
 
 /**
  * Class AreasController
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -47,7 +47,7 @@ class AreasController extends AdminController
     public function choose(AreaRepositoryInterface $areas)
     {
         return $this->view->make(
-            'behavior_lab.module.struct_data::admin/areas/choose',
+            'conduct_lab.module.struct_data::admin/areas/choose',
             [
                 'areas' => $areas->all(),
             ]

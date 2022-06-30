@@ -1,4 +1,4 @@
-<?php namespace BehaviorLab\StructDataModule\Area\Form;
+<?php namespace ConductLab\StructDataModule\Area\Form;
 
 use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
 

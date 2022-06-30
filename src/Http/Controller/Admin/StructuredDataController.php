@@ -1,21 +1,21 @@
-<?php namespace BehaviorLab\StructDataModule\Http\Controller\Admin;
+<?php namespace ConductLab\StructDataModule\Http\Controller\Admin;
 
-use BehaviorLab\StructDataModule\Area\Command\GetArea;
-use BehaviorLab\StructDataModule\Area\Contract\AreaInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumRepositoryInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\Form\StructuredDatumFormBuilder;
-use BehaviorLab\StructDataModule\StructuredDatum\Form\StructuredDatumInstanceFormBuilder;
-use BehaviorLab\StructDataModule\StructuredDatum\Table\StructuredDatumTableBuilder;
+use ConductLab\StructDataModule\Area\Command\GetArea;
+use ConductLab\StructDataModule\Area\Contract\AreaInterface;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumRepositoryInterface;
+use ConductLab\StructDataModule\StructuredDatum\Form\StructuredDatumFormBuilder;
+use ConductLab\StructDataModule\StructuredDatum\Form\StructuredDatumInstanceFormBuilder;
+use ConductLab\StructDataModule\StructuredDatum\Table\StructuredDatumTableBuilder;
 use Anomaly\Streams\Platform\Addon\Extension\ExtensionCollection;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
 
 /**
  * Class StructuredDataController
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -109,12 +109,12 @@ class StructuredDataController extends AdminController
 
         /* @var ExtensionCollection $extensions */
         $extensions = $extensions
-            ->search('behavior_lab.module.struct_data::type.*')
+            ->search('conduct_lab.module.struct_data::type.*')
             ->enabled()
             ->sort();
 
         return $this->view->make(
-            'behavior_lab.module.struct_data::admin/structured_data/choose',
+            'conduct_lab.module.struct_data::admin/structured_data/choose',
             [
                 'extensions' => $extensions->all(),
             ]

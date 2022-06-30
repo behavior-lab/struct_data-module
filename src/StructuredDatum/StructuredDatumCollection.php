@@ -1,14 +1,14 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum;
+<?php namespace ConductLab\StructDataModule\StructuredDatum;
 
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
 use Anomaly\Streams\Platform\Entry\EntryCollection;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 
 /**
  * Class StructuredDatumCollection
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

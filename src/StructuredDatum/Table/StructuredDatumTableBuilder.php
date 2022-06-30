@@ -1,4 +1,4 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Table;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Table;
 
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Ui\Table\TableBuilder;
@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Builder;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       BehaviorLab\StructDataModule\StructuredDatum\Table
+ * @package       ConductLab\StructDataModule\StructuredDatum\Table
  */
 class StructuredDatumTableBuilder extends TableBuilder
 {
@@ -39,7 +39,7 @@ class StructuredDatumTableBuilder extends TableBuilder
      */
     protected $columns = [
         'extension' => [
-            'heading' => 'behavior_lab.module.struct_data::field.structured_datum.name',
+            'heading' => 'conduct_lab.module.struct_data::field.structured_datum.name',
             'wrapper' => '{value.extension}<br><span class="text-muted">{value.title}</span>',
             'value'   => [
                 'title'     => 'entry.title',

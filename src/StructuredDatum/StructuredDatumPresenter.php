@@ -1,14 +1,14 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum;
+<?php namespace ConductLab\StructDataModule\StructuredDatum;
 
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
 use Anomaly\Streams\Platform\Entry\EntryPresenter;
 use Anomaly\Streams\Platform\Support\Decorator;
 
 /**
  * Class StructuredDatumPresenter
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

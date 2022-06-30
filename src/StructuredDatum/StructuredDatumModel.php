@@ -1,10 +1,10 @@
 <?php
 
-namespace BehaviorLab\StructDataModule\StructuredDatum;
+namespace ConductLab\StructDataModule\StructuredDatum;
 
-use BehaviorLab\StructDataModule\StructuredDatum\Command\MakeStructuredDatum;
-use BehaviorLab\StructDataModule\StructuredDatum\Command\RenderStructuredDatum;
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
+use ConductLab\StructDataModule\StructuredDatum\Command\MakeStructuredDatum;
+use ConductLab\StructDataModule\StructuredDatum\Command\RenderStructuredDatum;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
 use Anomaly\ConfigurationModule\Configuration\Contract\ConfigurationRepositoryInterface;
 use Anomaly\SettingsModule\Setting\Contract\SettingRepositoryInterface;
 use Anomaly\Streams\Platform\Addon\FieldType\FieldTypePresenter;
@@ -14,8 +14,8 @@ use Anomaly\Streams\Platform\Model\StructData\StructDataStructuredDataEntryModel
 /**
  * Class StructuredDatumModel
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

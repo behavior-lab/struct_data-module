@@ -1,12 +1,12 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Form;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Form;
 
 use Anomaly\Streams\Platform\Ui\Form\Multiple\MultipleFormBuilder;
 
 /**
  * Class StructuredDatumInstanceFormBuilder
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

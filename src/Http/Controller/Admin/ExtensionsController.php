@@ -1,7 +1,7 @@
-<?php namespace BehaviorLab\StructDataModule\Http\Controller\Admin;
+<?php namespace ConductLab\StructDataModule\Http\Controller\Admin;
 
-use BehaviorLab\StructDataModule\Extension\Form\ExtensionFormBuilder;
-use BehaviorLab\StructDataModule\Extension\Table\ExtensionTableBuilder;
+use ConductLab\StructDataModule\Extension\Form\ExtensionFormBuilder;
+use ConductLab\StructDataModule\Extension\Table\ExtensionTableBuilder;
 use Anomaly\Streams\Platform\Http\Controller\AdminController;
 
 class ExtensionsController extends AdminController

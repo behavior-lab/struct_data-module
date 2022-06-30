@@ -1,14 +1,14 @@
-<?php namespace BehaviorLab\StructDataModule\Type;
+<?php namespace ConductLab\StructDataModule\Type;
 
-use BehaviorLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
-use BehaviorLab\StructDataModule\Type\Contract\TypeInterface;
+use ConductLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
+use ConductLab\StructDataModule\Type\Contract\TypeInterface;
 use Anomaly\Streams\Platform\Entry\EntryRepository;
 
 /**
  * Class TypeRepository
  *
- * @link          https://behaviorlab.site/
- * @author        Behavior CPH, ApS <support@behaviorlab.site>
+ * @link          https://ConductLab.site/
+ * @author        Behavior CPH, ApS <support@ConductLab.site>
  * @author        Ryan Thompson <ryan@pyrocms.com>
  */
 class TypeRepository extends EntryRepository implements TypeRepositoryInterface

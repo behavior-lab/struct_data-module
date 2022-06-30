@@ -1,6 +1,6 @@
-<?php namespace BehaviorLab\StructDataModule\Extension;
+<?php namespace ConductLab\StructDataModule\Extension;
 
-use BehaviorLab\StructDataModule\Extension\Contract\ExtensionRepositoryInterface;
+use ConductLab\StructDataModule\Extension\Contract\ExtensionRepositoryInterface;
 use Anomaly\Streams\Platform\Entry\EntryRepository;
 
 class ExtensionRepository extends EntryRepository implements ExtensionRepositoryInterface

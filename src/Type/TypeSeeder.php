@@ -1,7 +1,7 @@
-<?php namespace BehaviorLab\StructDataModule\Type;
+<?php namespace ConductLab\StructDataModule\Type;
 
-use BehaviorLab\StructDataModule\Type\Contract\TypeInterface;
-use BehaviorLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
+use ConductLab\StructDataModule\Type\Contract\TypeInterface;
+use ConductLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
 use Anomaly\Streams\Platform\Assignment\Contract\AssignmentRepositoryInterface;
 use Anomaly\Streams\Platform\Database\Seeder\Seeder;
 use Anomaly\Streams\Platform\Field\Contract\FieldRepositoryInterface;
@@ -10,8 +10,8 @@ use Anomaly\Streams\Platform\Stream\Contract\StreamRepositoryInterface;
 /**
  * Class TypeSeeder
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
@@ -85,7 +85,7 @@ class TypeSeeder extends Seeder
                         'description' => 'A simple structured_datum type.',
                     ],
                     'slug'         => 'default',
-                    'handler'      => 'behavior_lab.extension.default_structured_datum_handler',
+                    'handler'      => 'conduct_lab.extension.default_structured_datum_handler',
                     'theme_layout' => 'theme::layouts/default.twig',
                     'layout'       => '<h1>{{ structured_datum.title }}</h1>
 

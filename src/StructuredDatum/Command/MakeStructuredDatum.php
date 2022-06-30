@@ -1,15 +1,15 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Command;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Command;
 
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 
 /**
  * Class MakeStructuredDatum
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

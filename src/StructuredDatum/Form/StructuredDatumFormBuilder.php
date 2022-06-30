@@ -1,8 +1,8 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Form;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Form;
 
-use BehaviorLab\StructDataModule\Area\Contract\AreaInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
-use BehaviorLab\StructDataModule\Type\Contract\TypeInterface;
+use ConductLab\StructDataModule\Area\Contract\AreaInterface;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
+use ConductLab\StructDataModule\Type\Contract\TypeInterface;
 use Anomaly\Streams\Platform\Entry\Contract\EntryInterface;
 use Anomaly\Streams\Platform\Field\Contract\FieldInterface;
 use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
@@ -13,7 +13,7 @@ use Anomaly\Streams\Platform\Ui\Form\FormBuilder;
  * @link          http://anomaly.is/streams-platform
  * @author        AnomalyLabs, Inc. <hello@anomaly.is>
  * @author        Ryan Thompson <ryan@anomaly.is>
- * @package       BehaviorLab\StructDataModule\StructuredDatum\Form
+ * @package       ConductLab\StructDataModule\StructuredDatum\Form
  */
 class StructuredDatumFormBuilder extends FormBuilder
 {

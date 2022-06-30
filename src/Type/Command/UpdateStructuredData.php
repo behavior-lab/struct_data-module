@@ -1,16 +1,16 @@
-<?php namespace BehaviorLab\StructDataModule\Type\Command;
+<?php namespace ConductLab\StructDataModule\Type\Command;
 
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
-use BehaviorLab\StructDataModule\StructuredDatum\Contract\StructuredDatumRepositoryInterface;
-use BehaviorLab\StructDataModule\Type\Contract\TypeInterface;
-use BehaviorLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumInterface;
+use ConductLab\StructDataModule\StructuredDatum\Contract\StructuredDatumRepositoryInterface;
+use ConductLab\StructDataModule\Type\Contract\TypeInterface;
+use ConductLab\StructDataModule\Type\Contract\TypeRepositoryInterface;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 
 /**
  * Class UpdateStructuredData
  *
- * @link          https://behaviorlab.site/
- * @author        Behavior CPH, ApS <support@behaviorlab.site>
+ * @link          https://ConductLab.site/
+ * @author        Behavior CPH, ApS <support@ConductLab.site>
  * @author        Ryan Thompson <ryan@pyrocms.com>
  */
 class UpdateStructuredData

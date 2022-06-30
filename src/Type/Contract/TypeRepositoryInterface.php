@@ -1,12 +1,12 @@
-<?php namespace BehaviorLab\StructDataModule\Type\Contract;
+<?php namespace ConductLab\StructDataModule\Type\Contract;
 
 use Anomaly\Streams\Platform\Entry\Contract\EntryRepositoryInterface;
 
 /**
  * Interface TypeRepositoryInterface
  *
- * @link          https://behaviorlab.site/
- * @author        Behavior CPH, ApS <support@behaviorlab.site>
+ * @link          https://ConductLab.site/
+ * @author        Behavior CPH, ApS <support@ConductLab.site>
  * @author        Ryan Thompson <ryan@pyrocms.com>
  */
 interface TypeRepositoryInterface extends EntryRepositoryInterface

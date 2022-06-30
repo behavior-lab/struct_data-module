@@ -1,0 +1,13 @@
+<div id="structured_datum_{{ form.getOptions().structured_datum_id }}" class="structured_datum-item">
+
+    {% include "conduct_lab.field_type.struct_data::partials/controls" %}
+
+    <div class="clearfix"></div>
+
+    {% include "conduct_lab.field_type.struct_data::partials/fields" %}
+
+    <div class="structured_datum-body existing">
+        {{ form.getContent()|raw }}
+    </div>
+
+</div>

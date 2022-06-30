@@ -1,12 +1,12 @@
 {
-    "name": "behavior_lab/struct_data-module",
+    "name": "conduct_lab/struct_data-module",
     "type": "streams-addon",
     "description": "Manage structured data of content.",
     "keywords": [
         "structured_data",
         "google"
     ],
-    "homepage": "https://behaviorlab.site/addons/struct_data-module",
+    "homepage": "https://ConductLab.site/addons/struct_data-module",
     "license": "MIT",
     "assets": {
         "icon": "marketplace/icon.png",
@@ -15,7 +15,7 @@
     "authors": [
         {
             "name": "Behavior CPH ApS",
-            "homepage": "https://behaviorlab.site/",
+            "homepage": "https://ConductLab.site/",
             "role": "Owner"
         },
         {
@@ -25,7 +25,7 @@
         },
         {
             "name": "Claus Hjort Bube",
-            "homepage": "https://behaviorlab.site/staff/chb",
+            "homepage": "https://ConductLab.site/staff/chb",
             "role": "Developer"
         }
     ],
@@ -36,8 +36,8 @@
     },
     "autoload": {
         "psr-4": {
-            "BehaviorLab\\StructDataModule\\": "src/",
-            "BehaviorLab\\StructDataFieldType\\": "addons/behavior_lab/struct_data-field_type/src/"
+            "ConductLab\\StructDataModule\\": "src/",
+            "ConductLab\\StructDataFieldType\\": "addons/conduct_lab/struct_data-field_type/src/"
         }
     }
 }

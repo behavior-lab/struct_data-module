@@ -1,14 +1,14 @@
-<?php namespace BehaviorLab\StructDataModule;
+<?php namespace ConductLab\StructDataModule;
 
-use BehaviorLab\StructDataModule\Area\Command\GetArea;
-use BehaviorLab\StructDataModule\Area\Contract\AreaInterface;
+use ConductLab\StructDataModule\Area\Command\GetArea;
+use ConductLab\StructDataModule\Area\Contract\AreaInterface;
 use Anomaly\Streams\Platform\Addon\Plugin\Plugin;
 
 /**
  * Class StructDataModulePlugin
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */

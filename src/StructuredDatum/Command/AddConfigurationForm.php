@@ -1,15 +1,15 @@
-<?php namespace BehaviorLab\StructDataModule\StructuredDatum\Command;
+<?php namespace ConductLab\StructDataModule\StructuredDatum\Command;
 
-use BehaviorLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
-use BehaviorLab\StructDataModule\StructuredDatum\Form\StructuredDatumInstanceFormBuilder;
+use ConductLab\StructDataModule\StructuredDatum\StructuredDatumExtension;
+use ConductLab\StructDataModule\StructuredDatum\Form\StructuredDatumInstanceFormBuilder;
 use Anomaly\ConfigurationModule\Configuration\Form\ConfigurationFormBuilder;
 use Illuminate\Contracts\Config\Repository;
 
 /**
  * Class AddConfigurationForm
  *
- * @link   https://behaviorlab.site/
- * @author Behavior CPH, ApS <support@behaviorlab.site>
+ * @link   https://ConductLab.site/
+ * @author Behavior CPH, ApS <support@ConductLab.site>
  * @author Ryan Thompson <ryan@pyrocms.com>
  * @author Claus Hjort Bube <chb@b-cph.com>
  */
